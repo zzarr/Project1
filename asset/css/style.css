@@ -15,27 +15,30 @@ p {
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: var(--bg);
-    color: white;
-    min-height: 2000px;
+    min-height: 1000px;
+    background-image: url("../img/bacground/tampilan1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 
 /* Navbar */
 .navbar {
     display: flex;
-    padding: 1.4rem 7%;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
     background: rgba(40, 39, 39, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99999;
+    z-index: 999999;
 }
 
 .nav-logo {
@@ -44,8 +47,8 @@ body {
 }
 
 .navbar .nav-logo img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin-right: 10px;
 }
 
@@ -59,30 +62,36 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .nav-links li {
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
+    color: #6610f2;
 }
+
+
 
 /* Hero Section */
 .hero-section {
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../../asset/bacground/tampilan1.png");
+    background-image: url("../img/bacground/tampilan1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
+
+
 
 .hero-text {
     text-align: center;
@@ -91,4 +100,29 @@ body {
 .hero-text h1 {
     font-size: 48px;
     margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    color: #333;
+    font-size: 14px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }

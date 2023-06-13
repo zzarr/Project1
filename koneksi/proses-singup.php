@@ -23,8 +23,8 @@ if ($password != $password2) {
     exit();
 }
 
-if (empty($nama && $username && $password && $password2 && $email)) {
-    echo "<script>alert('Pastikan anda sudah mengisi semua formulir.');window.location='?page=buku';</script>";
+if (empty($username && $password && $password2 && $email)) {
+    echo "<script>alert('Pastikan anda sudah mengisi semua formulir.');</script>";
     return false;
 }
 
@@ -33,7 +33,7 @@ if (empty($nama && $username && $password && $password2 && $email)) {
 // Menyimpan data pengguna ke database
 $query = "INSERT INTO users (username,email, password) VALUES ('$username','$email', '$password')";
 if (mysqli_query($conn, $query)) {
-    echo "Pendaftaran berhasil! Silakan <a href='..\login.php'>sign in</a> untuk melanjutkan.";
+    header("location:../notifBerhasil.php");
 } else {
     echo "Pendaftaran gagal. Silakan coba lagi.";
 }

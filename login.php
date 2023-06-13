@@ -21,7 +21,7 @@ if (isset($_POST['login'])) {
     }
 
     if (empty($eror)) {
-        $_SESSION['login'] = $username;
+        $_SESSION['login'] = $r1;
         header("location:index.php");
         exit();
     }

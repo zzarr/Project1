@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -17,24 +18,19 @@ body {
     background-position: center;
     position: relative;
 
+
 }
 
 
 /* Navbar */
-.nav-bar {
-    display: flex;
-    /* From https://css.glass 
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.7px);
-    -webkit-backdrop-filter: blur(7.7px);
-    border: 1px solid rgba(255, 255, 255, 0.3);*/
+nav .navbar {
+    /* From https://css.glass */
+    background-color: #333;
 }
 
-nav .nav-logo img {
+nav .navbar .nav-logo img {
     width: 80px;
-    height: 8px;
+    height: 80px;
 }
 
 /* Hero Section */
@@ -43,10 +39,12 @@ nav .nav-logo img {
     justify-content: space-between;
     align-items: center;
     position: relative;
+
 }
 
 .hero-section img {
     width: 100%;
+    margin-top: 100px;
 }
 
 .footer {
